@@ -24,3 +24,9 @@ Thumbs.db
 
 # Backup files
 *.bak
+
+# Large raster datasets and generated map overlays
+data/raw/
+data/processed/
+*.tif
+maps/overlays/
