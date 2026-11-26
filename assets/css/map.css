@@ -11,6 +11,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 /* Tempat MapLibre menggambar peta */
@@ -18,4 +19,53 @@ body {
     width: 100%;
     height: 100%;
     background-color: #e2e8f0;
+}
+
+/* Legenda layer mengambang */
+.map-legend {
+    position: absolute;
+    left: 16px;
+    bottom: 24px;
+    z-index: 10;
+    min-width: 190px;
+    max-width: 260px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid #334155;
+    color: #f8fafc;
+    font-size: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.map-legend.hidden {
+    display: none;
+}
+
+.map-legend-title {
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: #f8fafc;
+}
+
+.map-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+    font-size: 11px;
+    color: #e2e8f0;
+}
+
+.map-legend-item:last-child {
+    margin-bottom: 0;
+}
+
+.map-legend-swatch {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    border: 1px solid rgba(255, 255, 255, 0.25);
 }
